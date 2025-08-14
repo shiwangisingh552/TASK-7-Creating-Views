@@ -1,4 +1,4 @@
-A. CREATE VIEWS TABLE :
+A. CREATE Books TABLE :
          CREATE TABLE Books (
          BookID INTEGER PRIMARY KEY,
          Title TEXT,
