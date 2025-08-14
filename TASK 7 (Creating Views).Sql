@@ -1,4 +1,4 @@
-A. CREATE TABLE VIEWS
+A. CREATE VIEWS TABLE :
          CREATE TABLE Books (
          BookID INTEGER PRIMARY KEY,
          Title TEXT,
@@ -9,15 +9,15 @@ A. CREATE TABLE VIEWS
 
 B. TO CREATE A VIEWS TO SHOW ONLY AVAILABLE BOOKS
 
-    CREATE VIEW AvailableBooks AS
+    CREATE VIEW AvailableBooks:
         SELECT BookID, Title, Author
         FROM Books
         WHERE Available = 1;  
 
- SELECT * FROM AvailableBooks;
+    SELECT * FROM AvailableBooks;
 
 C. JOINING A VIEWS WITH ANOTHER TABLE
 
-SELECT b.Name, ab.Title
-FROM Borrowers b
-JOIN AvailableBooks ab ON b.FavoriteBookID = ab.BookID;
+      SELECT b.Name, ab.Title
+      FROM Borrowers b
+      JOIN AvailableBooks ab ON b.FavoriteBookID = ab.BookID;
